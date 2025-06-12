@@ -4,7 +4,7 @@ export function ChaiCounter() {
   const [count, setCount] = useState(0);
 
   const serveChai = () => {
-    setCount((prev) => prev + 1);
+    setCount((prev ) => prev + 1);
   };
 
   return (
@@ -13,7 +13,7 @@ export function ChaiCounter() {
       <p>You have served {count} cups of chai</p>
       <button onClick={serveChai}>Serve Chai</button>
       {/* OR */}
-      {/* <button onClick={ () => setCount((prev) => prev + 1) }>Serve Chai</button> */} 
+      {/* <button onClick={ () => setCount(prev => prev + 1) }>Serve Chai</button> */} 
       {/* Better build custom method like serveChai */}
 
       {/* {count} is a variable */}

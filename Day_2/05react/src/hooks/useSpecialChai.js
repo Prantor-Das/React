@@ -25,3 +25,5 @@ export function useSpecialChai() {
 
   return { chai, loading, error };
 }
+
+// We don't expect jsx from hooks

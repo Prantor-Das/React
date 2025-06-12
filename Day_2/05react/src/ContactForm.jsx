@@ -7,7 +7,8 @@ function ContactForm() {
     useContactForm();
 
     const handleChange = (e) => {
-        setForm({...form, [e.target.name]: e.target.value})
+        setForm({...form, [e.target.name]: e.target.value}) 
+        // ...form load existing form
     }
 
     const handleSubmit = (e) => {

@@ -15,8 +15,9 @@ export class ErrorBoundary extends Component {
     console.error("Caught by EB", error, info);
   }
   render() {
+    // fallback
     if (this.state.hasError) {
-      <div>
+      <div> 
         <h2>Something is wrong here</h2>
         {this.state.message}
       </div>;

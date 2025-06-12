@@ -7,8 +7,15 @@ export function useContactForm() {
 
   const submitContact = async (formData) => {
     setLoading(true);
-    setSuccessMessage(null);
+    setSuccessMessage(null); // for fresh start
     setErrorMessage(null);
+
+    // formData = {
+    //   name: "",
+    //   email: "",
+    //   message: "",
+    // }
+    // formData is a constructor
 
     try {
       const res = await fetch("/api/contact", {

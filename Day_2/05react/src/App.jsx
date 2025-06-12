@@ -3,7 +3,7 @@ import { ChaiMenu } from "./AllChai";
 import { useSpecialChai } from "./hooks/useSpecialChai.js";
 
 export function App() {
-  const { chai, loading, error } = useSpecialChai();
+  const { chai, loading, error } = useSpecialChai(); // custom hook
   const [message, setMessage] = useState(6);
   console.log("Chai", chai);
 
