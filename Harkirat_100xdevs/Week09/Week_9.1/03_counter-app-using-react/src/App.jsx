@@ -9,6 +9,17 @@ function App() {
 
   // Declaring a state variable 'count' initialized to 0 and its setter function 'setCount' using the useState hook.
   const [count, setCount] = useState(0);
+  // useState returns an array with two elements
+  // count is a variable
+  // setCount is a function
+  // const [variable, function] = useState(defaultValue);
+  // useState is a hook
+  // We can change the value of the variable using the function
+
+  // const value = useState(0);
+  // // value is an array
+  // // value[0] is the variable
+  // // value[1] is the function
 
   // Defining a function that handles the button click event.
   function onClickHandler() {
@@ -41,3 +52,21 @@ function App() {
 
 // Exporting the App component as the default export for use in other parts of the application.
 export default App; 
+
+
+//////////////////////////////////////////////////////////////////
+// import { useState } from 'react';
+
+// function App() {
+//   const [count, setCount] = useState(0);
+//   function onClickHandler() {
+//     setCount(count + 1);
+//   }
+//   return (
+//     <div>
+//       <h1>Counter App</h1>
+//       <button onClick={onClickHandler}>Counter {count}</button>
+//     </div>
+//   );
+// }
+//////////////////////////////////////////////////////////////////

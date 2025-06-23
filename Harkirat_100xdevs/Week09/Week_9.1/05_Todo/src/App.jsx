@@ -95,3 +95,61 @@ function Todo(props) {
 
 // Export the App component as default
 export default App; 
+
+
+
+/////////////////////////////////////////////////////////////
+// import { useState } from "react";
+
+// export default function App() {
+//     const [todos, setTodos] = useState ([]); // initially no todo
+
+//     function addTodo(){
+//         // alert("hi");
+
+//         let newArray = [...todos]; // Destructuring
+
+//         // It is actually
+//         // let newArray = [];
+//         // for(i=0;i<todos.length:i++){
+//         //     newArray.push(todos[i]);
+//         // }
+//         newArray.push({
+//             title: document.getElementById("title").value,
+//             description: document.getElementById("description").value, 
+//             done: true,
+//         },)
+
+//         setTodos(newArray)
+//     }
+
+//     // component
+//     return (
+//         <div>
+//             <input id="title" type="text" placeholder="Enter Todo Title"></input>
+//             <input id="description" type="text" placeholder="Write Todo Description"></input>
+//             <br />
+//             <button onClick={addTodo}>Add Todo</button>
+//             <br />
+//             {/* {JSON.stringify(todos)} */}
+//             {/* Loops */}
+//             {todos.map((todos)=> 
+//                 (<Todo 
+//                     title={todos[0].title} 
+//                     description={todos[0].description} 
+//                     done={todos[0].done} 
+//                 />
+//                 ))}
+//         </div>
+//     )
+// }
+
+// function Todo(props) {
+//     return (
+//         <div>
+//             <h1>{props.title}</h1>
+//             <h2>{props.description}</h2>
+//             <h2>{props.done ? "Task is done" : "Task is not done"}</h2>
+//         </div>
+//     )
+// }
